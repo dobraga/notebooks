@@ -1,0 +1,36 @@
+[project]
+name = "router_graph"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv>=1.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/"]
+
+[dependency-groups]
+langchain = [
+    "langchain>=0.3.25",
+    "langchain-google-genai>=2.1.4",
+    "langgraph>=0.4.2",
+    "pydantic>=2.11.4",
+]
+llama-index = [
+    "llama-index>=0.12.34",
+    "llama-index-llms-google-genai>=0.1.12",
+    "pydantic>=2.11.4",
+]
+pydantic = [
+    "pydantic-ai>=0.1.10",
+]
+
+[project.scripts]
+langchain = "src._langchain.__init__:run_chatbot"
+llamaindex = "src._llamaindex.__init__:run_chatbot"
