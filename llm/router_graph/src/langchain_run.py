@@ -121,6 +121,7 @@ def run_chatbot():
 
     state = {"messages": [], "message_type": None}
 
+    print("[Type 'exit' to quit]")
     while True:
         user_input = input("Message: ")
         if user_input == "exit":

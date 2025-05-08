@@ -17,11 +17,11 @@ uv sync --all-groups
 ``` 
 
 ```sh
-uv run langchain
+uv run src/langchain_run.py
 ``` 
 
 ```sh
-uv run llamaindex
+uv run src/llamaindex_run.py
 ``` 
 
 ```sh

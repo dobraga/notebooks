@@ -30,7 +30,3 @@ llama-index = [
 pydantic = [
     "pydantic-ai>=0.1.10",
 ]
-
-[project.scripts]
-langchain = "src._langchain.__init__:run_chatbot"
-llamaindex = "src._llamaindex.__init__:run_chatbot"
