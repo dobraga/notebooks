@@ -7,7 +7,7 @@ Test Dynamic Routing Agents: Classifier → Router → Agent nodes, all decouple
 2. Agent Profiles: Swapping out ‘therapist’ vs. ‘logical’ personas via simple system prompts.
 
 
-Implement's using LangGraph + LangChain, llama_index or Pydantic AI
+Implement's using LangGraph, llama_index (workflow) or Pydantic AI (TODO)
 
 
 ## Running
